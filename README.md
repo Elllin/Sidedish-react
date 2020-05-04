@@ -56,3 +56,22 @@
 [회고](https://docs.google.com/spreadsheets/d/1ochEHhdpodDV29CX_8cA_X2NDwgcH2VXLZidgj4cxlE/edit#gid=490556856)
 
 [issue](https://github.com/codesquad-member-2020/sidedish-04/issues?page=2&q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed)
+
+## 코드리뷰
+
+[코드리뷰](https://github.com/codesquad-member-2020/sidedish-04/pull/58)
+
+### 잘한 점
+
+- 컴포넌트 단위가 적당하고 좋다.
+
+- app.js (entry point)가 깔끔한 점
+
+### 아쉬운 점
+
+- Global.jsx파일은 css문자열을 담고 있는 js기 때문에 확장자를 jsx로 하기보단 /src/styles/global.js 이런식의 path로 할 수도 있다.
+
+- 공통적으로 사용되는 값들은 css variables 를 활용
+  [참고](medium.com/fbdevclagos/how-to-leverage-styled-components-and-css-variables-to-build-truly-reusable-components-in-react-4bbf50467666)
+
+- Carousel.jsx파일에서 onClick의 핸들러 함수를 분리해서 선언하도록 하자
